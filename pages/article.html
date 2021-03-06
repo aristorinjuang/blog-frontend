@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/tailwind.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+	<!-- This example requires Tailwind CSS v2.0+ -->
+	<div>
+		<header class="bg-white shadow">
+			<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+				<h1 class="float-left text-3xl font-bold text-gray-900">
+					<a href="/dashboard">Dashboard</a>
+				</h1>
+				<div class="float-right inline-flex rounded-md shadow">
+					<a href="#" class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700">
+						Logout
+					</a>
+				</div>
+				<div class="clear-both"></div>
+			</div>
+		</header>
+		<main>
+			<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+				<div class="mt-5 md:w-2/3 mx-auto">
+					<form action="#" method="POST">
+						<div class="shadow sm:rounded-md sm:overflow-hidden">
+							<div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+								<div>
+									<label for="image" class="block text-sm font-medium text-gray-700">
+										Image
+									</label>
+									<div class="mt-1 flex rounded-md shadow-sm">
+										<input type="text" name="image" id="image" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-sm border-gray-300" placeholder="Image">
+									</div>
+								</div>
+								<div>
+									<label for="title" class="block text-sm font-medium text-gray-700">
+										Title
+									</label>
+									<div class="mt-1 flex rounded-md shadow-sm">
+										<input type="text" name="title" id="title" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-sm border-gray-300" placeholder="Title">
+									</div>
+								</div>
+								<div>
+									<label for="content" class="block text-sm font-medium text-gray-700">
+										Content
+									</label>
+									<div class="mt-1">
+										<textarea id="content" name="content" rows="5" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Content"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+								<button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+									Save
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
