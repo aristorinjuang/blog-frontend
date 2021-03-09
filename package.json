@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "NODE_ENV=production ./node_modules/postcss-cli/bin/postcss src/tailwind.css -o assets/tailwind.css"
+    "dev": "npx tailwindcss-cli build src/tailwind.css -o assets/tailwind.css",
+    "prod": "NODE_ENV=production ./node_modules/postcss-cli/bin/postcss src/tailwind.css -o assets/tailwind.css"
   },
   "author": "Aristo Rinjuang",
   "license": "ISC",
